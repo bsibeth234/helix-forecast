@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Outfit:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-background: #f3f0e8;
+  --color-foreground: #141311;
+  --color-card: #faf8f4;
+  --color-card-foreground: #141311;
+  --color-popover: #faf8f4;
+  --color-popover-foreground: #141311;
+  --color-primary: #5f7468;
+  --color-primary-foreground: #f3f0e8;
+  --color-secondary: #e7e3d9;
+  --color-secondary-foreground: #141311;
+  --color-muted: #e7e3d9;
+  --color-muted-foreground: #6b6860;
+  --color-accent: #5f7468;
+  --color-accent-foreground: #f3f0e8;
+  --color-destructive: #9a5344;
+  --color-destructive-foreground: #faf8f4;
+  --color-border: #d4cfc3;
+  --color-input: #d4cfc3;
+  --color-ring: #5f7468;
+  --color-paper: #f3f0e8;
+  --color-ink: #141311;
+  --color-sage: #5f7468;
+  --color-yes: #5f7468;
+  --color-no: #9a5344;
+  --color-chart-1: #5f7468;
+  --color-chart-2: #5a6f78;
+  --color-chart-3: #9a5344;
+
+  --radius: 0.75rem;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground;
+    font-feature-settings: "ss01" on, "cv11" on;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.03em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

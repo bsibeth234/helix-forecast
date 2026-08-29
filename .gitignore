@@ -1,0 +1,17 @@
+node_modules
+.vercel
+dist
+.output
+screenshots
+artifacts
+.grok/skills
+.grok/references
+.grok/preview.log
+.grok/status
+.grok/og-pending
+.grok/favicon-16.png
+.grok/favicon-32.png
+.env
+.env.local
+*.log
+.DS_Store
