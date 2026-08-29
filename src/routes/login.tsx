@@ -56,7 +56,10 @@ function Login() {
           </Link>
           <div className="max-w-xl py-12">
             <p className="text-xs font-medium tracking-[0.2em] text-primary uppercase">Internal forecasting room</p>
-            <h1 className="mt-4 font-display text-5xl leading-[1.05] text-balance">Collective intelligence for sales outcomes.</h1>
+            <h1 className="mt-4 font-display text-4xl leading-[1.08] text-balance md:text-5xl">
+              Bet on your sales people's performance,{" "}
+              <span className="block">before you lose your job to AI</span>
+            </h1>
             <p className="mt-5 max-w-md text-base text-muted-foreground">
               Helix is a private, company-operated market. You forecast measurable KPIs with virtual points — not money.
               Prices are probabilities. Nothing here is a wager, a bonus, or an employment score.

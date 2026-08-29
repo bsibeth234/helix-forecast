@@ -38,8 +38,9 @@ function Landing() {
       </header>
       <section className="mx-auto max-w-6xl px-6 py-16 lg:py-24">
         <p className="text-xs font-medium tracking-[0.22em] text-foreground/70 uppercase">Northstar Commerce · internal only</p>
-        <h1 className="mt-5 max-w-3xl font-display text-5xl leading-[1.05] text-balance md:text-7xl">
-          A forecasting room, not a trading floor.
+        <h1 className="mt-5 max-w-4xl font-display text-4xl leading-[1.08] text-balance md:text-6xl">
+          Bet on your sales people's performance,{" "}
+          <span className="block">before you lose your job to AI</span>
         </h1>
         <p className="mt-6 max-w-xl text-lg text-muted-foreground">
           Helix lets sales teams express conviction about measurable outcomes with virtual points. The crowd price is a live probability — a signal for operators, never a wager and never cash.

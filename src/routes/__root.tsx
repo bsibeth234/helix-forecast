@@ -5,7 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "sonner";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Helix";
+const APP_NAME = "Bet on your sales people's performance, before you lose your job to AI";
 
 export const Route = createRootRoute({
   head: () => ({
